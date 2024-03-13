@@ -22,7 +22,7 @@ const Register = () => {
   return (
     <div className="auth--container">
     <div className="form--wrapper">
-      <form onSubmit={(e) => {handleUserRegister(e, credentials)}}>
+      <form autoComplete="off" onSubmit={(e) => {handleUserRegister(e, credentials)}}>
           <div className="field--wrapper">
             <label>Name:</label>
             <input 
@@ -60,10 +60,11 @@ const Register = () => {
           <div  className="field--wrapper">
             <label>Confirm Password:</label>
             <input 
+            autoComplete="off"
             required
             type="password"
             name="password2"
-            placeholder="confimr your password..."
+            placeholder="confirm your password..."
             value={credentials.password2}
             onChange={(e) => {handleInputChange(e)}}
             />

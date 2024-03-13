@@ -103,8 +103,7 @@ const Room = () => {
                         )}
               </div>
               <div className={"message--body" + (message.user_id === user.$id ? ' message--body--owner' : '')}>
-                        <span>{message.body}</span>
-                        
+                        <span>{message.body}</span>                        
                     </div>
             </div>
           ))}

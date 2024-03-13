@@ -28,7 +28,7 @@ const Login = () => {
   return (
     <div className="auth--container">
     <div className="form--wrapper">
-      <form onSubmit={(e) => {handleUserLogin(e, credentials)}}>
+      <form autoComplete="off"  onSubmit={(e) => {handleUserLogin(e, credentials)}}>
           <div className="field--wrapper">
             <label>Email:</label>
             <input 

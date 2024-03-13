@@ -1,11 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./App.css";
 import Room from "./pages/Room";
 import Login from "./pages/Login";
 import PrivateRoutes from "./components/PrivateRoutes";
 import { AuthContextProvider } from "./utils/AuthContext";
 import Register from "./pages/Register";
-BrowserRouter;
 
 function App() {
   return (
